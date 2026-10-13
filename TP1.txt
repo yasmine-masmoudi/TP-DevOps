@@ -1,0 +1,11 @@
+Matière : Plateforme collaborative et intégration continue (DevOps)
+
+Responsable du cours : Bassem BOUAZIZ
+
+Enseignante de TP : Siwar CHAABENE
+
+Auditoires :
+D-INFO
+D-IITWM
+
+Année universitaire : 2026-2027
