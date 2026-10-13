@@ -1,0 +1,23 @@
+name: Premier pipeline CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Recuperer le code
+        uses: actions/checkout@v4
+
+      - name: Verifier les fichiers
+        run: |
+          test -f README.md
+          test -f TP1.txt
+          echo "Verification reussie !"
