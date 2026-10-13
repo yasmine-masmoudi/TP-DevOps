@@ -8,4 +8,11 @@ Auditoires :
 D-INFO
 D-IITWM
 
-Année universitaire : 2026-2027Nouvelle fonctionnalit� ajout�e.
+Année universitaire : 2026-2027
+Nouvelle fonctionnalit  ajout e.
+Résumé des nouvelles fonctionnalités
+
+1. Gestion des utilisateurs : ajout, consultation et modification des informations des utilisateurs.
+2. Gestion des produits : ajout de produits, consultation des informations et mise à jour des quantités en stock.
+
+Ces fonctionnalités améliorent la gestion des utilisateurs et des produits dans le système.

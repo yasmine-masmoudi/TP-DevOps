@@ -1,0 +1,3 @@
+Fonctionnalité 2 : Gestion des produits
+
+Cette fonctionnalité permet d'ajouter des produits, de consulter leurs informations et de mettre à jour les quantités disponibles dans le stock.

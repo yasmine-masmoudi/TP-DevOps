@@ -1,15 +1,17 @@
-name: Premier pipeline CI
+name: Pipeline CI - TP DevOps
 
 on:
   push:
     branches:
       - main
+      - ajout-fonctionnalites
   pull_request:
     branches:
       - main
 
 jobs:
   verification:
+    name: Premier pipeline CI
     runs-on: ubuntu-latest
 
     steps:
@@ -21,3 +23,20 @@ jobs:
           test -f README.md
           test -f TP1.txt
           echo "Verification reussie !"
+
+  validate_files:
+    name: Validation des nouvelles fonctionnalites
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Recuperer le code
+        uses: actions/checkout@v4
+
+      - name: Verifier les deux fonctionnalites
+        run: |
+          if [ -s fonctionnalite1.txt ] && [ -s fonctionnalite2.txt ]; then
+            echo "Tous les fichiers sont presents et contiennent du texte."
+          else
+            echo "Erreur : un fichier est manquant ou vide."
+            exit 1
+          fi
